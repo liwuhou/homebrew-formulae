@@ -1,7 +1,6 @@
 class Tread < Formula
-  desc "A terminal-based reader for Markdown, EPUB and web content"
+  desc "Terminal-based reader for Markdown, EPUB and web content"
   homepage "https://github.com/liwuhou/tread"
-  version "0.1.7"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/liwuhou/tread/releases/download/v0.1.7/tread-aarch64-apple-darwin.tar.xz"
@@ -23,7 +22,6 @@ class Tread < Formula
     end
   end
   license "MIT"
-
 
   def install
     bin.install "tread"
